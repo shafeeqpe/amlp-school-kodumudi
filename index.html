@@ -77,11 +77,26 @@ p {
 <div class="container">
   <div class="wrapper">
     <div class="content">
-      <div class="item">
-        <!-- Place your content here to have it be centered vertically and horizontally  --><h2>AMLP SCHOOL KODUMUDI</h2>
-        <h1>COMING SOON</h1>
-        <p>This website is under construction.</p
-      </div>
+    <form name="contact" method="POST" netlify>
+  <p>
+    <label>Your Name: <input type="text" name="name" /></label>   
+  </p>
+  <p>
+    <label>Your Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Your Role: <select name="role[]" multiple>
+      <option value="leader">Leader</option>
+      <option value="follower">Follower</option>
+    </select></label>
+  </p>
+  <p>
+    <label>Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
     </div>
   </div>
 </div>
